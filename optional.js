@@ -1,4 +1,4 @@
-// this code was built to use the for loop
+// this code was built to use the for loop. You can replace this code in the html by changing the src file
 
 function tocaSom (idAudio) {
     document.querySelector(idAudio).play();
