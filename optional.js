@@ -3,7 +3,7 @@
 function playAudio (audioSelector) {
     const audioElement = document.querySelector(audioSelector);
 
-    if (audioElement && audioElement.localName === `audio`) {
+    if (audioElement != null && audioElement.localName === `audio`) {
         audioElement.play();
     }
     else {
