@@ -1,7 +1,7 @@
 // this code was built to use the for loop. You can replace this code in the html by changing the src file
 
-function tocaSom (idAudio) {
-    document.querySelector(idAudio).play();
+function tocaSom (audioSelector) {
+    const audioElement = document.querySelector(audioSelector);
 }
 
 const listaDeTeclas = document.querySelectorAll('.tecla');
