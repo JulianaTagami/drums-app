@@ -25,10 +25,12 @@ for (contador = 0; contador < listaDeTeclas.length; contador++) {
         playAudio(idAudio);
     }
 
-    teclas.onkeydown = function () {
+    teclas.onkeydown = function (evento) {
+    if (evento.code === `Space`|| evento.code === `Enter`) { 
         teclas.classList.add('ativa');
+        }
     }
-
+    
     teclas.onkeyup = function () {
         teclas.classList.remove('ativa')
     }
