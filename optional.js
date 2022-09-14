@@ -1,14 +1,9 @@
 // this code was built to use the for loop. You can replace this code in the html by changing the src file
 
 function playAudio (audioSelector) {
-    const audioElement = document.querySelector(audioSelector);
+    document.querySelector(audioSelector).play();
 
-    if (audioElement != null && audioElement.localName === `audio`) {
-        audioElement.play();
-    }
-    else {
-        console.log(`missing element`);
-    }
+
 }
 
 const listaDeTeclas = document.querySelectorAll('.tecla');
